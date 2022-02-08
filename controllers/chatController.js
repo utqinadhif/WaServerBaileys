@@ -8,6 +8,12 @@ const getList = (req, res) => {
     return response(res, 200, true, '', getChatList(session))
 }
 
+const getListGroup = (req, res) => {
+    const { session } = res.locals
+
+    return response(res, 200, true, '', getChatList(session, true))
+}
+
 const send = (req, res) => {
     const { session } = res.locals
     const receiver = formatPhone(req.body.receiver)
@@ -34,4 +40,4 @@ const send = (req, res) => {
         })
 }
 
-export { getList, send }
+export { getList, getListGroup, send }

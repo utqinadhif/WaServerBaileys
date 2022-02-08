@@ -9,6 +9,8 @@ const router = Router()
 
 router.get('/get', query('id').notEmpty(), requestValidator, sessionValidator, controller.getList)
 
+router.get('/get/group', query('id').notEmpty(), requestValidator, sessionValidator, controller.getListGroup)
+
 router.get('/get/:jid', query('id').notEmpty(), requestValidator, sessionValidator, getMessages)
 
 router.post(
