@@ -1,5 +1,5 @@
 {
-    "name": "baileys-api",
+    "name": "waserverbaileys",
     "version": "1.0.0",
     "description": "A Simple RESTful WhatsApp API",
     "main": "app.js",
@@ -9,19 +9,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ookamiiixd/baileys-api.git"
+        "url": "git+https://github.com/utqinadhif/WaServerBaileys.git"
     },
     "keywords": [
         "whatsapp",
         "api",
         "rest"
     ],
-    "author": "ookamiiixd <ookamiiixd@gmail.com>",
+    "author": "utqinadhif <nadhifbeo@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ookamiiixd/baileys-api/issues"
+        "url": "https://github.com/utqinadhif/WaServerBaileys/issues"
     },
-    "homepage": "https://github.com/ookamiiixd/baileys-api#readme",
+    "homepage": "https://github.com/utqinadhif/WaServerBaileys#readme",
     "engines": {
         "node": ">=14.5.0"
     },
