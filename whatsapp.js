@@ -59,6 +59,15 @@ const createSession = async (sessionId, res = null) => {
         deleteSession(sessionId)
     })
 
+    wa.on('chat-update', chatUpdate => {
+        // `chatUpdate` is a partial object, containing the updated properties of the chat
+        // received a new message
+        if (chatUpdate.messages && chatUpdate.count) {
+            const message = chatUpdate.messages.all()[0]
+            console.log (message)
+        } else console.log (chatUpdate) // see updates (can be archived, pinned etc.)
+    })
+
     await wa.connect().catch((err) => {
         console.log('An error occured during connecting: ' + err)
 
